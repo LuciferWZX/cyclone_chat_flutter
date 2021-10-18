@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:cyclone_chat/home.dart';
+import 'package:cyclone_chat/pages/user/login_page.dart';
 import 'package:cyclone_chat/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -36,7 +37,8 @@ class _MyAppState extends State<MyApp> {
       initialRoute: "/splash",
       routes: {
         '/splash':(context)=>const SplashPage(),
-        '/main':(context)=>const Home()
+        '/main':(context)=>const Home(),
+        '/login':(context)=>const LoginPage(),
       }
     );
   }
